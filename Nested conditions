@@ -1,0 +1,25 @@
+m = '''1. Введение в Python
+2. Строки и списки
+3. Условные операторы
+4. Циклы
+5. Словари, кортежи и множества
+6. Выход'''
+m = m.split("\n")
+a = int(input())
+if a == 1:
+    print(m[0])
+elif a == 2:
+    print(m[1])
+elif a == 3:
+    print(m[2])
+elif a == 4:
+    print(m[3])
+elif a == 5:
+    print(m[4])
+elif a == 6:
+    print(m[5])
+else:
+    print("Не правильное число")
+
+a = map(int, input().split())
+print(min(a))
