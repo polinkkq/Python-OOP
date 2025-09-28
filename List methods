@@ -1,0 +1,38 @@
+a = list(map(int, input().split()))
+n = len(a) - 1
+a+= [a[0] != a[n]]
+print(*a)
+
+cities = ["Москва", "Казань", "Ярославль"]
+cities.insert(1, "Ульяновск")
+print(*cities)
+
+a = input()
+lst = list(a)
+lst.remove('+')
+lst.remove('7')
+lst.insert(0, 8)
+idx = lst.index('-')
+lst.pop(idx)
+idx = lst.index('-')
+lst.pop(idx)
+print(*lst, sep="")
+
+a = input().split()
+print(f"{a[2]} {a[0][:1]}.{a[1][:1]}.")
+
+a = list(map(int, input().split()))
+print(*sorted(a)[0:3])
+
+lst = list(map(int, input().split()))
+b = lst.pop()
+lst.append(b % 2 != 0)
+print(*lst)
+
+lst = list(map(int, input().split()))
+print(lst.count(2))
+
+a = list(input().split())
+a = sorted(a)
+a.pop(0)
+print(*a)
