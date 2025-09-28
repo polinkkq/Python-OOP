@@ -1,0 +1,31 @@
+lst = list(map(int, input().split()))
+print(lst)
+
+cities = input().split()
+print("Москва" in cities)
+
+cities = input().split()
+n = len(cities) -1
+print(cities[n])
+
+marks = list(map(int, input().split()))
+res = sum(marks) / len(marks)
+print(round(res, 1))
+
+book = [input(), input(), int(input()), float(input())]
+book[1] = "Пушкин"
+book[3] *= 2
+del book[2]
+print(book)
+
+a = list(map(int, input().split()))
+print(max(a), min(a), sum(a))
+
+a = list(map(int, input().split()))
+a = sorted(a, reverse=True)
+print(*a)
+
+a = input().split()
+c = ["Москва", "Тверь", "Вологда"]
+b = c + a
+print(*b)
