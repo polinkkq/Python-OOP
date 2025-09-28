@@ -1,0 +1,21 @@
+a = input()
+print(a[0].upper() + a[1:].lower())
+
+a = input()
+print(a.count("-"))
+
+a = input()
+print(a.find("ra"))
+
+a = input()
+a = a.replace("---", '-')
+print(a.replace("--", '-'))
+
+a, b, c = input().split()
+print(a.rjust(3, '0'), b.rjust(3, '0'), c.rjust(3, '0'), sep='\n')
+
+s = input()
+print(s.count(' ') + 1)
+
+s = input()
+print(s.replace(' ', ';'))
