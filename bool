@@ -1,0 +1,8 @@
+a = float(input())
+print(int(a) % 3 == 0)
+
+a = float(input())
+print(a * 100 % 100 > 50)
+
+a, b = map(int, input().split())
+print(a  % b == 0)
